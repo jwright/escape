@@ -60,15 +60,15 @@ Once the CLI loops through all of the questions, you will get a message with a c
 git clone https://github.com/jwright/escape
 ```
 
-1. `cd` into this directory
+2. `cd` into this directory
 
 ```
 cd escape
 ```
 
-1. Configure your questions at [escape/questions.yml](escape/questions.yml)
+3. Configure your questions at [escape/questions.yml](escape/questions.yml)
 
-1. Run the application at the command line
+4. Run the application at the command line
 
 ```
 escape
