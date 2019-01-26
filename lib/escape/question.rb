@@ -8,7 +8,7 @@ module Escape
     end
 
     def correct?(answer)
-      self.answer == answer
+      self.answer.to_s == answer
     end
 
     class << self
