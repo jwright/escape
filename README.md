@@ -74,6 +74,12 @@ cd escape
 escape
 ```
 
+## RELEASING A NEW GEM
+
+1. Bump the VERSION in `lib/escape/version.rb`
+1. Commit changes and push to GitHub
+1. run `bundle exec rake release`
+
 ## CONTRIBUTING
 
 1. Clone the repository `git clone git@github.com:jwright/escape`
@@ -82,3 +88,9 @@ escape
 1. Commit your changes (small commits please)
 1. Push your new branch `git push origin my-awesome-feature`
 1. Create a pull request `hub pull-request -b jwright:master -h jwright:my-awesome-feature`
+
+## LICENSE
+
+Copyright (c) 2019, Jamie Wright.
+
+This project is licensed under the [MIT License](LICENSE.md).
