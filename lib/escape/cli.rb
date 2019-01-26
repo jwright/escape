@@ -12,5 +12,9 @@ module Escape
       Escape::Commands::Questions.new(self).start(config.questions, config.clues)
       Escape::Commands::Restart.new(self).restart
     end
+
+    desc "restart", "Restarts a new game"
+    def restart
+    end
   end
 end
