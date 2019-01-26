@@ -1,0 +1,12 @@
+welcome_message: |
+  Welcome to the Escape Room!
+  +------------------------------------------------+
+
+  We are here to solve a puzzle together.
+  You will asked a series of questions.
+  Each question will provide you an answer.
+  The trick is that some of those questions may be wrong if your answer is wrong.
+  You will not know until you try the code that is provided to you after each answer.
+  Good luck.
+
+  Hit RETURN to start.
