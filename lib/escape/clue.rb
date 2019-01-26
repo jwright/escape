@@ -13,7 +13,7 @@ module Escape
     def incorrect(index)
       correct = self.correct(index)
 
-      return ([*0..9] - [correct]).sample if correct.is_a?(Integer)
+      return ([*0..99] - [correct]).sample if correct.is_a?(Integer)
       return ([*"A".."Z"] - [correct]).sample if correct.is_a?(String)
     end
   end
