@@ -15,7 +15,7 @@ one or more may be wrong but they will not know the wrong answer.
 
 ### Usage
 
-You can modify the [questions.yml](escape/questions.yml) file with your own questions, answers, and the code.
+You can modify the [configuration.yml](./configuration.yml) file with your own questions, answers, and the code.
 
 To start, the actors are greated with a welcome message and they hit return to start:
 
@@ -66,7 +66,7 @@ git clone https://github.com/jwright/escape
 cd escape
 ```
 
-3. Configure your questions at [escape/questions.yml](escape/questions.yml)
+3. Configure your welcome message, questions, answers, and code at [./configuration.yml](./configuration.yml)
 
 4. Run the application at the command line
 
