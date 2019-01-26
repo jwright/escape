@@ -8,13 +8,13 @@ module Escape
 
       Escape::Commands::Welcome.new(self).show(configuration.welcome_message)
       Escape::Commands::Questions.new(self).start(configuration.questions, configuration.clues)
-      Escape::Commands::Restart.new(self).restart
+      Escape::Commands::Restart.new(self).restart_or_quit
     end
 
     desc "restart", "Restarts a new game"
     def restart
       Escape::Commands::Questions.new(self).start(configuration.questions, configuration.clues)
-      Escape::Commands::Restart.new(self).restart
+      Escape::Commands::Restart.new(self).restart_or_quit
     end
 
     no_commands do
