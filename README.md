@@ -54,21 +54,19 @@ Once the CLI loops through all of the questions, you will get a message with a c
 
 ### Installation
 
-1. Pull down this repository
+1. Install the gem
 
 ```
-git clone https://github.com/jwright/escape
+gem install escape-room
+```
+2. Configure your welcome message, questions, answers, and code at [./configuration.yml](./configuration.yml)
+
+```
+cd $GEM_HOME/gems/escape-room-0.0.2
+nano configuration.yml
 ```
 
-2. `cd` into this directory
-
-```
-cd escape
-```
-
-3. Configure your welcome message, questions, answers, and code at [./configuration.yml](./configuration.yml)
-
-4. Run the application at the command line
+3. Run the application at the command line
 
 ```
 escape
