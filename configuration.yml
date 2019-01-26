@@ -10,3 +10,10 @@ welcome_message: |
   Good luck.
 
   Hit RETURN to start.
+
+
+questions:
+  - text: What is the meaning of life?
+    answer: 42
+  - text: What is the value of PI?
+    answer: 3.14

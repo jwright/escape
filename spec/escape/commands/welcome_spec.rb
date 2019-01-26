@@ -8,6 +8,8 @@ RSpec.describe Escape::Commands::Welcome do
     subject { described_class.new(stream) }
 
     it "outputs the welcome message" do
+      ignore_input!
+
       expect(capture(:stdout) { subject.show("Hello World!") }).to eq "Hello World!\n"
     end
   end

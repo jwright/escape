@@ -2,18 +2,18 @@ require "yaml"
 
 module Escape
   class Configuration
-    class << self
-      def load(path)
-        new(YAML.load_file(path))
-      end
-    end
-
     def questions
-      config["questions"]
+      QuestionList.load(config["questions"])
     end
 
     def welcome_message
       config["welcome_message"]
+    end
+
+    class << self
+      def load(path)
+        new(YAML.load_file(path))
+      end
     end
 
     protected

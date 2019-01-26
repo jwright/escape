@@ -7,7 +7,7 @@ module Escape
       config = Escape::Configuration.load("./configuration.yml")
 
       Escape::Commands::Welcome.new(shell).show(config.welcome_message)
-      Escape::Commands::Questions.new(shell).start
+      Escape::Commands::Questions.new(shell).start(config.questions)
     end
   end
 end

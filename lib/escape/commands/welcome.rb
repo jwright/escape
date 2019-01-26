@@ -3,6 +3,7 @@ module Escape
     class Welcome < Base
       def show(message)
         stream.say message
+        stream.ask "\n"
       end
     end
   end
