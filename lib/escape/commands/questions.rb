@@ -1,12 +1,6 @@
 module Escape
   module Commands
-    class Questions
-      attr_reader :stream
-
-      def initialize(stream)
-        @stream = stream
-      end
-
+    class Questions < Base
       def start
       end
     end

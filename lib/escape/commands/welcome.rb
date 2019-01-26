@@ -1,12 +1,6 @@
 module Escape
   module Commands
-    class Welcome
-      attr_reader :stream
-
-      def initialize(stream)
-        @stream = stream
-      end
-
+    class Welcome < Base
       def show
         stream.say "Welcome to the Game!"
       end
