@@ -29,7 +29,7 @@ module Escape
 
     no_commands do
       def configuration
-        @configuration ||= Escape::Configuration.load("./configuration.yml")
+        @configuration ||= Escape::Configuration.load(File.join(File.dirname(__FILE__), "..", "..", "configuration.yml"))
       end
 
       def valid_configuration?
