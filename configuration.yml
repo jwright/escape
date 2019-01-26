@@ -10,3 +10,7 @@ welcome_message: |
   Good luck.
 
   Hit RETURN to start.
+
+questions:
+  - text: What is the meaning of life?
+    answer: 42
