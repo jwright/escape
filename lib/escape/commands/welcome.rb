@@ -2,8 +2,8 @@ module Escape
   module Commands
     class Welcome < Base
       def show(message)
-        stream.say message
-        stream.ask "\n"
+        runner.say message
+        runner.ask "\n"
       end
     end
   end

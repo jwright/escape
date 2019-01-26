@@ -8,8 +8,9 @@ module Escape
 
       raise RuntimeError, "Number of questions does not match the number of clues" if config.questions.count != config.clues.count
 
-      Escape::Commands::Welcome.new(shell).show(config.welcome_message)
-      Escape::Commands::Questions.new(shell).start(config.questions, config.clues)
+      Escape::Commands::Welcome.new(self).show(config.welcome_message)
+      Escape::Commands::Questions.new(self).start(config.questions, config.clues)
+      Escape::Commands::Restart.new(self).restart
     end
   end
 end

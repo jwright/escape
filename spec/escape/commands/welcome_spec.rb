@@ -4,8 +4,8 @@ RSpec.describe Escape::Commands::Welcome do
   include Spec::Helpers::OutputHelper
 
   describe "#show" do
-    let(:stream) { Thor::Shell::Basic.new }
-    subject { described_class.new(stream) }
+    let(:runner) { Thor::Shell::Basic.new }
+    subject { described_class.new(runner) }
 
     it "outputs the welcome message" do
       ignore_input!

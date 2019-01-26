@@ -1,9 +1,9 @@
 RSpec.describe Escape::Commands::Base do
   describe "#initialize" do
-    let(:stream) { $stdout }
+    let(:runner) { double }
 
-    it "initializes with a stream" do
-      expect(described_class.new(stream).stream).to eq stream
+    it "initializes with a runner" do
+      expect(described_class.new(runner).runner).to eq runner
     end
   end
 end
