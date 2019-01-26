@@ -19,14 +19,14 @@ RSpec.describe Escape::Commands::Questions do
     it "displays the correct clue if the answer is correct" do
       allow(Thor::LineEditor).to receive(:readline).with("What is the meaning of life? ", {}).and_return("42")
 
-      expect(capture(:stdout) { subject.start(question_list, clue) }).to match(/42/)
+      expect(capture(:stdout) { subject.start(question_list, clue) }).to match(/YOUR NEXT CLUE IS '42'/)
     end
 
     it "displays an incorrect clue if the answer is incorrect" do
       allow(question1).to receive(:correct?).and_return false
       allow(Thor::LineEditor).to receive(:readline).with("What is the meaning of life? ", {}).and_return("56")
 
-      expect(capture(:stdout) { subject.start(question_list, clue) }).to_not match(/42/)
+      expect(capture(:stdout) { subject.start(question_list, clue) }).to_not match(/YOUR NEXT CLUE IS '42'/)
     end
   end
 end

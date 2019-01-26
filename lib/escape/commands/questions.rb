@@ -4,7 +4,8 @@ module Escape
       def start(questions, clues)
         questions.each_with_index do |question, index|
           answer = runner.ask(question.text)
-          runner.say(question.correct?(answer) ? Clue.new(clues).correct(index) : Clue.new(clues).incorrect(index))
+          clue = question.correct?(answer) ? Clue.new(clues).correct(index) : Clue.new(clues).incorrect(index)
+          runner.say("YOUR NEXT CLUE IS '#{clue}'")
           runner.say
         end
       end
