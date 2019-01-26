@@ -2,8 +2,8 @@ require "yaml"
 
 module Escape
   class Configuration
-    def clue
-      config["clue"]
+    def clues
+      config["clues"]
     end
 
     def questions

@@ -17,6 +17,6 @@ questions:
   - text: What is the value of PI?
     answer: 3
 
-clue:
+clues:
   - 4
   - H

@@ -1,13 +1,13 @@
 module Escape
   class Clue
-    attr_reader :clue
+    attr_reader :clues
 
-    def initialize(clue)
-      @clue = clue
+    def initialize(clues)
+      @clues = clues
     end
 
     def correct(index)
-      clue[index]
+      clues[index]
     end
 
     def incorrect(index)

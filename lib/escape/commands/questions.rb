@@ -1,10 +1,10 @@
 module Escape
   module Commands
     class Questions < Base
-      def start(questions, clue)
+      def start(questions, clues)
         questions.each_with_index do |question, index|
           answer = stream.ask(question.text)
-          stream.say(question.correct?(answer) ? Clue.new(clue).correct(index) : Clue.new(clue).incorrect(index))
+          stream.say(question.correct?(answer) ? Clue.new(clues).correct(index) : Clue.new(clues).incorrect(index))
           stream.say
         end
       end
