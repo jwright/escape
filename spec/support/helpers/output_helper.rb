@@ -13,6 +13,10 @@ module Spec
 
         result
       end
+
+      def ignore_input!
+        allow(Thor::LineEditor).to receive(:readline).and_return("")
+      end
     end
   end
 end
