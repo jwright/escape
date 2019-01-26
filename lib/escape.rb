@@ -1,3 +1,5 @@
 require_relative "escape/cli"
 require_relative "escape/commands"
 require_relative "escape/configuration"
+require_relative "escape/question"
+require_relative "escape/question_list"
