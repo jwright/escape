@@ -11,9 +11,12 @@ welcome_message: |
 
   Hit RETURN to start.
 
-
 questions:
   - text: What is the meaning of life?
     answer: 42
   - text: What is the value of PI?
-    answer: 3.14
+    answer: 3
+
+clues:
+  - 4
+  - H
