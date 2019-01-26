@@ -7,8 +7,8 @@ RSpec.describe Escape::Commands::Questions do
     let(:clue) { [42]}
     let(:question1) { double(text: "What is the meaning of life?", correct?: true)}
     let(:question_list) { [question1]}
-    let(:stream) { Thor::Shell::Basic.new }
-    subject { described_class.new(stream) }
+    let(:runner) { Thor::Shell::Basic.new }
+    subject { described_class.new(runner) }
 
     it "displays the first question" do
       expect(Thor::LineEditor).to receive(:readline).with("What is the meaning of life? ", {}).and_return("IDK")

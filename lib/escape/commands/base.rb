@@ -1,10 +1,10 @@
 module Escape
   module Commands
     class Base
-      attr_reader :stream
+      attr_reader :runner
 
-      def initialize(stream)
-        @stream = stream
+      def initialize(runner)
+        @runner = runner
       end
     end
   end
