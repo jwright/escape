@@ -1,1 +1,1 @@
-require "escape/cli"
+require_relative "escape/cli"
