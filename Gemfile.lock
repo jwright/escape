@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    escape-room (0.0.2)
+    escape-room (0.0.3)
       thor
 
 GEM

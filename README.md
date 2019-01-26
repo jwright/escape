@@ -62,7 +62,7 @@ gem install escape-room
 2. Configure your welcome message, questions, answers, and code at [./configuration.yml](./configuration.yml)
 
 ```
-cd $GEM_HOME/gems/escape-room-0.0.2
+cd $GEM_HOME/gems/escape-room-0.0.3
 nano configuration.yml
 ```
 
@@ -75,6 +75,7 @@ escape
 ## RELEASING A NEW GEM
 
 1. Bump the VERSION in `lib/escape/version.rb`
+1. Bundle install `bundle install`
 1. Commit changes and push to GitHub
 1. run `bundle exec rake release`
 
