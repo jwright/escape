@@ -2,6 +2,10 @@ require "yaml"
 
 module Escape
   class Configuration
+    def clue
+      config["clue"]
+    end
+
     def questions
       QuestionList.load(config["questions"])
     end
