@@ -2,6 +2,8 @@ require "thor"
 
 module Escape
   class CLI < Thor
+    default_task :start
+
     desc "start", "Starts a new game"
     def start
       raise RuntimeError, "Number of questions does not match the number of clues" unless valid_configuration?
