@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    escape-room (0.0.1)
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -21,11 +27,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
+  escape-room!
   rspec
-  thor
-
-RUBY VERSION
-   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.6
